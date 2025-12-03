@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ORIGINS2 - ELEMENTÁLNÍ KRÁLOVSTVÍ</title>
+<style>
+/* ============================= */
+/* ZÁKLADNÍ STYL PRO CELOU STRÁNKU */
+/* ============================= */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #1a1a1a, #0d0d0d);
+  color: #f0f0f0;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* ============================= */
+/* KONTEJNER / CARD STYLE */
+/* ============================= */
+.container {
+  max-width: 100%;
+  width: 95%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(30, 30, 30, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* ============================= */
+/* NADPISY */
+/* ============================= */
+h1, h2, h3 {
+  color: #ffcc00;
+  margin-top: 20px;
+  text-shadow: 1px 1px 2px #000;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.3em; }
+
+/* ============================= */
+/* ODSTAVCE A SEZNAMY */
+/* ============================= */
+p {
+  margin-bottom: 14px;
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* ============================= */
+/* SEKCE S ODSTUPY A POZADÍM */
+/* ============================= */
+section {
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(50, 50, 50, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Jemná animace při hoveru (desktop) */
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* ============================= */
+/* TLAČÍTKA / SPEC. ELEMENTY (pokud se objeví) */
+/* ============================= */
+button {
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  color: #1a1a1a;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #e6b800;
+}
+
+/* ============================= */
+/* RESPONSIVITA PRO MOBILY */
+/* ============================= */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 15px;
+    width: 95%;
+  }
+
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.4em; }
+  h3 { font-size: 1.2em; }
+
+  ul {
+    padding-left: 15px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+
+<section>
+<h1>ORIGINS2 - ELEMENTÁLNÍ KRÁLOVSTVÍ 🔥❄️⚡🌪️🌱🌑</h1>
+<p>Aktualizace Elemental Realm přináší spoustu nového obsahu a výzev pro vysoce postavené hráče!</p>
+</section>
+
+<section>
+<h2>🌌 ELEMENTÁLNÍ MAPA</h2>
+<h3>🔑 Požadavky na přístup:</h3>
+<ul>
+<li>Level 120</li>
+<li>Mapa quest dokončena</li>
+<li>Klíč k přístupu (General Store)</li>
+</ul>
+
+<p><strong>Info k map questu:</strong></p>
+<ul>
+<li>Dokončit X krát nový Nagga dungeon</li>
+<li>Zničit X Metin Stone na Snake Map</li>
+<li>Poraž X monster na Snake Map</li>
+</ul>
+
+<p>Po dokončení všech úkolů se hráči zobrazí potvrzovací okno:</p>
+<p>“Souhlasíte s tím, že zablokujete následující dungeony, abyste získali přístup k nové Elemental Map: <strong>Jotun, Hydra, Meley, Sung Mahi</strong>?”</p>
+<ul>
+<li>Pokud hráč zvolí Ano, dungeony jsou zablokovány navždy a přístup k Elemental Map je odemčen.</li>
+<li>Pokud zvolí Ne, quest zůstává dokončený, ale čeká na potvrzení. Hráč může přístup aktivovat později výběrem “Ano”.</li>
+</ul>
+</section>
+
+<section>
+<h2>⚔️ SYSTÉM POSTUPU ELEMENTŮ</h2>
+<p>Elemental Map obsahuje šest elementálních zón, odemykaných v pevně daném pořadí:</p>
+<p>❄️ Ice → 🌑 Dark → 🌱 Earth → 🌪️ Wind → ⚡ Lightning → 🔥 Fire</p>
+<ul>
+<li>Na začátku je dostupná pouze Ice Element zóna.</li>
+<li>Ostatní zóny zůstávají zamčené a odemykají se postupně skrze mise a klíčové předměty.</li>
+<li>Stav mise lze vždy zkontrolovat přes Quests System (klávesa N)</li>
+</ul>
+</section>
+
+<section>
+<h2>🚫 Chování zamčených zón</h2>
+<ul>
+<li>Hráči se mohou volně pohybovat po celé Elemental Map, i přes zóny, které ještě nejsou odemčeny.</li>
+<li>V zamčených zónách mají všichni nepřátelé, Metin Stone a bossové úplnou imunitu vůči poškození, dokud není příslušný element odemčen skrze systém misí.</li>
+</ul>
+</section>
+
+<section>
+<h2>⚙️ Globální herní modifikátory mapy</h2>
+<ul>
+<li>🔻 Snížení poškození: Veškeré poškození hráče je sníženo o 30%, což zvyšuje strategii bojů.</li>
+<li>💥 Snížení kritického zásahu: Kritické zásahy mají globálně sníženou efektivitu. Hráči tak musí používat speciální vybavení, alchymii a bonusy pro plný kritický setup.</li>
+</ul>
+</section>
+<section>
+<h2>🐍 NAGGA DUNGEON</h2>
+<p>⚠️ K vstupu do tohoto dungeonu je potřeba specifické vybavení. Klikněte na tlačítko VYBAVENÍ v rozhraní dungeonu, abyste viděli požadavky!</p>
+<ul>
+<li>Přístup: Level 120</li>
+<li>Cooldown: 45 minut</li>
+<li>Limit dungeonů: 6 denně</li>
+</ul>
+</section>
+
+<section>
+<h2>🔮 ELEMENTÁLNÍ DUNGEON</h2>
+<p>Pořadí místností: ❄️ Ice → 🌑 Dark → 🌱 Earth → 🌪️ Wind → ⚡ Lightning → 🔥 Fire</p>
+<ul>
+<li>Po dokončení úkolů na patře se zobrazí okno s dotazem, zda souhlasíte se spawnem finálního bosse. Pokud zvolíte Ano, dungeon končí po zabití bosse.</li>
+<li>Postupovat do další místnosti lze až po odemčení nové mise pro příslušný element.</li>
+<li>Stav mise lze kdykoli zkontrolovat přes Quests System (klávesa N)</li>
+</ul>
+
+<p>ℹ️ <strong>Podrobné vysvětlení:</strong></p>
+<p>Cílem dungeon je dokončit každou elementární místnost, získat speciální předměty a splnit požadavky pro další místnost. Do další místnosti lze postoupit pouze pokud jsou dokončeny elementární mise. Pokud ne, můžete dungeon ukončit na aktuální úrovni a boss se spawnne.</p>
+
+<p>🇭 <strong>Průvodce:</strong></p>
+<p>Dokončete nejvyšší dostupnou Element Room a zabijte bosse → Vylepšete vybavení → Dokončete další Elementální mise → Postupujte do vyšší místnosti podle aktuálního stavu mise → 🔁 Opakujte</p>
+</section>
+
+<section>
+<h2>🌳 SKILL TREE SYSTÉM</h2>
+<p>Představujeme Skill Tree systém rozdělený do 3 větví, kde hráči odemykají permanentní pasivní bonusy postupem po stromu. Momentálně je plně dostupná jen první větev, ostatní zůstanou zamčené až do budoucích aktualizací.</p>
+<p>Cílem systému je poskytnout silnou podporu pro postup v novém Elemental obsahu.</p>
+
+<h3>🔒 Struktura systému a přístup</h3>
+<ul>
+<li>K přístupu je potřeba speciální klíč (General Store)</li>
+<li>Přístup pouze od levelu 120</li>
+<li>Rychlý přístup: CTRL+S</li>
+</ul>
+
+<h3>⚙️ Odemykací mechanismus</h3>
+<ul>
+<li>Každý uzel (skill point) vyžaduje specifické materiály k odemčení</li>
+<li>Pořadí odemykání je lineární – nelze přeskočit uzly ani vybrat náhodné bonusy</li>
+</ul>
+
+<h3>🌟 Bonusy (první větev)</h3>
+<ul>
+<li>+2000 HP</li>
+<li>+10 Strong proti Ice a +5 Resist Ice</li>
+<li>+10 Strong proti Dark a +5 Resist Dark</li>
+<li>+10 Strong proti Earth a +5 Resist Earth</li>
+<li>+10% Strong proti Elemental Metins</li>
+<li>+10 Strong proti Wind a +5 Resist Wind</li>
+<li>+10 Strong proti Lightning a +5 Resist Lightning</li>
+<li>+10 Strong proti Fire a +5 Resist Fire</li>
+<li>+10% Strong proti Dungeon</li>
+</ul>
+
+<h3>🔋 Refill Energy systém</h3>
+<ul>
+<li>Po odemčení uzlu nebo více je bonus aktivní omezenou dobu a poté je potřeba dobít energii</li>
+<li>Když energie dojde, bonusy se deaktivují, dokud nejsou dobity specifickými materiály</li>
+</ul>
+</section>
+
+<section>
+<h2>👨‍💼 NOVÉ BIOLOGISTICKÉ MISE</h2>
+<p>Představujeme nové biologické mise, které podporují postup v Elemental obsahu.</p>
+<ul>
+<li>Celkem 6 nových misí</li>
+<li>Cooldown: 3 hodiny</li>
+<li>Přidány nové Elixíry a Time Reset objekty</li>
+</ul>
+
+<h3>📌 Požadavky</h3>
+<ul>
+<li>Každá mise vyžaduje doručení určitých objektů k dokončení první části úkolu (objekty lze zakoupit v Biologist SHOP)</li>
+<li>Druhá část vyžaduje doručení speciální Soul Stone (dostupná přes Delivery System)</li>
+</ul>
+
+<h3>❄️ Ice Bio Mission</h3>
+<ul>
+<li>Doručit 25 objektů</li>
+<li>Odměna: +5 Strong vs Ice a +5 Resist Ice</li>
+</ul>
+
+<h3>🌑 Dark Bio Mission</h3>
+<ul>
+<li>Doručit 30 objektů</li>
+<li>Odměna: +5 Strong vs Dark a +5 Resist Dark</li>
+</ul>
+
+<h3>🌱 Earth Bio Mission</h3>
+<ul>
+<li>Doručit 35 objektů</li>
+<li>Odměna: +5 Strong vs Earth a +5 Resist Earth</li>
+</ul>
+
+<h3>🌪️ Wind Bio Mission</h3>
+<ul>
+<li>Doručit 40 objektů</li>
+<li>Odměna: +5 Strong vs Wind a +5 Resist Wind</li>
+</ul>
+
+<h3>⚡ Lightning Bio Mission</h3>
+<ul>
+<li>Doručit 45 objektů</li>
+<li>Odměna: +5 Strong vs Lightning a +5 Resist Lightning</li>
+</ul>
+
+<h3>🔥 Fire Bio Mission</h3>
+<ul>
+<li>Doručit 50 objektů</li>
+<li>Odměna: +5 Strong vs Fire a +5 Resist Fire</li>
+</ul>
+</section>
+<section>
+<h2>🧪 NOVÉ ELEMENTÁLNÍ LEKÁRNÍ POTIONS</h2>
+<p>Představujeme 8 nových Elemental Potions (Dews), které poskytují podporu při postupu v Elemental obsahu. Každý dew dává specifický bonus a všechny dohromady poskytují bonus set.</p>
+
+<ul>
+<li>👑 <strong>Elemental Leaders Potion</strong> – Bonus: Silný proti Elemental Bossům</li>
+<li>💎 <strong>Elemental Metins Potion</strong> – Bonus: Silný proti Elemental Metinům</li>
+<li>❄️ <strong>Ice Elemental Potion</strong> – Bonus: Silný proti Ice</li>
+<li>🌑 <strong>Dark Elemental Potion</strong> – Bonus: Silný proti Dark</li>
+<li>🌱 <strong>Earth Elemental Potion</strong> – Bonus: Silný proti Earth</li>
+<li>🌪️ <strong>Wind Elemental Potion</strong> – Bonus: Silný proti Wind</li>
+<li>⚡ <strong>Lightning Elemental Potion</strong> – Bonus: Silný proti Lightning</li>
+<li>🔥 <strong>Fire Elemental Potion</strong> – Bonus: Silný proti Fire</li>
+</ul>
+
+<p><strong>BONUS SET</strong>: Aktivace všech nových potionů poskytuje +5% síly proti dungeonům.</p>
+</section>
+
+<section>
+<h2>🧣💫 ZODIAC SASH – 30% ABSORPCE</h2>
+<p>Systém pásů (sash) obdržel aktualizaci a nyní lze upgradeovat pás na Zodiac stage s 30% absorpcí.</p>
+<ul>
+<li>NPC: Theowahdan</li>
+<li>Možnost: Zodiac Sash Evolution</li>
+</ul>
+
+<h3>⚙️ Systém vylepšení</h3>
+<ul>
+<li>Pro první verzi Zodiac Sash (26%) je potřeba: 1x 25% Sash (libovolný typ) + 1x Zodiac Sash Upgrade</li>
+<li>Každý další level vyžaduje: 1x Zodiac Sash (předchozí absorpce) + 1x Zodiac Sash Upgrade až do 30%</li>
+</ul>
+
+<p>ℹ️ Další poznámky:</p>
+<ul>
+<li>Předmět absorbovaný do 25% pásu zůstane po evoluci a bonusy se zvyšují dle procent absorpce.</li>
+<li>Nový systém 30% absorpce poskytuje výhody podle průměru zbraně:
+<ul>
+<li>59 → 18% průměr na pásu</li>
+<li>60 → 19%</li>
+<li>61 → 20%</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section>
+<h2>💍🌈 NOVÉ ELEMENTÁLNÍ PRSTENY</h2>
+<p>Představujeme 7 nových Elemental Rings pro podporu postupu v Elemental obsahu.</p>
+<ul>
+<li>❄️💍 Ring of Ice – +10% odpor proti Ice, +10% síla proti monster, Metinům a bossům</li>
+<li>🌑💍 Ring of Dark – +10% odpor proti Dark, +10% síla proti monster, Metinům a bossům</li>
+<li>🌱💍 Ring of Earth – +10% odpor proti Earth, +10% síla proti monster, Metinům a bossům</li>
+<li>🌪️💍 Ring of Wind – +10% odpor proti Wind, +10% síla proti monster, Metinům a bossům</li>
+<li>⚡💍 Ring of Light – +10% odpor proti Light, +10% síla proti monster, Metinům a bossům</li>
+<li>🔥💍 Ring of Fire – +10% odpor proti Fire, +10% síla proti monster, Metinům a bossům</li>
+<li>🌈💍 Ring of Elements – +10% odpor proti všem elementům, +15% síla proti monster, +10% proti Metinům a bossům</li>
+</ul>
+</section>
+
+<section>
+<h2>🔮 NOVÝ ELEMENTAL STONE</h2>
+<p>Představujeme nový kámen pro zbroj, který podporuje postup v Elemental obsahu.</p>
+<ul>
+<li>NPC: General Store</li>
+<li>Koupit +0 a upgradovat až na +5 pro plnou sílu</li>
+<li>Bonusy podle levelu kamene:
+<ul>
+<li>+0: Silný proti Elemental Bossům +2%</li>
+<li>+1: +4%</li>
+<li>+2: +6%</li>
+<li>+3: +8%, Silný proti Elementům +2%</li>
+<li>+4: +8%, Silný proti Elementům +4%</li>
+<li>+5: +10%, Silný proti Elementům +8%</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section>
+<h2>💎 ENERGY CRYSTAL LEGENDARY</h2>
+<p>Představujeme novou evoluci systému Energy Crystal pro podporu v Elemental obsahu.</p>
+<ul>
+<li>Bonus: +10% síly proti dungeonům</li>
+</ul>
+</section>
+<section>
+<h2>⚔️🛡️ NOVÉ ZODIAC EQUIPMENT</h2>
+<p>Nová evoluce doplňků přináší silné upgrady, které významně posílí vaši postavu.</p>
+<ul>
+<li>🧿 Zodiac Náramek</li>
+<li>📿 Zodiac Náhrdelník</li>
+<li>👂 Zodiac Náušnice</li>
+<li>🛡️ Zodiac Štít</li>
+<li>🪖 Zodiac Přilba</li>
+<li>🥾 Zodiac Boty</li>
+<li>🪢 Zodiac Pásek</li>
+</ul>
+<p>Toto vybavení je nezbytné pro vaši cestu Elemental Realm!</p>
+</section>
+
+<section>
+<h2>🪨 ⛏️ NOVÝ ELEMENTÁLNÍ RUDNÍ ZDROJ & KRUMPÁČ</h2>
+
+<h3>🪨 NOVÁ RUDA</h3>
+<ul>
+<li>Nové žíly budou přidány do existujícího Mining Map.</li>
+<li>Starý krumpáč je nelze těžit – jen nový krumpáč umožní získat tento materiál.</li>
+</ul>
+
+<h3>🔨 NOVÝ KRUMPÁČ</h3>
+<ul>
+<li>Nový krumpáč se vyrábí z aktuálního +9 krumpáče + speciálních materiálů.</li>
+<li>Po výrobě začíná na +0 a lze jej upgradovat až na +9.</li>
+</ul>
+
+<h3>⚙️ POSTUP VYLEPŠENÍ</h3>
+<ul>
+<li>Každý level zlepšuje úspěšnost těžby.</li>
+<li>Na +9 krumpáč poskytuje +50% úspěšnost těžby.</li>
+</ul>
+</section>
+
+<section>
+<h2>⚔️ NOVÉ GLOBÁLNÍ MISE</h2>
+<p>Přidány nové globální mise související s novým obsahem s unikátními odměnami.</p>
+<ul>
+<li>Pravým kliknutím na Hero's Trophy otevřete speciální obchod.</li>
+<li>Mezi nejoblíbenější odměny patří legendární Naga kostýmy, silné a vzácné, dostupné pouze zde.</li>
+<li>Tyto předměty jsou unikátní a nelze je získat jinde.</li>
+</ul>
+</section>
+
+<section>
+<h2>🌱 🎁 BEGINNER EVENT SYSTEM</h2>
+<p>Spolu s tímto hlavním updatem byl spuštěn speciální event pro začátečníky.</p>
+
+<h3>⚙️ OBECNÉ INFO</h3>
+<ul>
+<li>Beginner Event bude aktivní pouze pro účty vytvořené po spuštění eventu a pro účty staré maximálně 2 dny před aktivací.</li>
+<li>Postavy vytvořené na starších účtech nedostanou výhody Beginner Eventu.</li>
+</ul>
+
+<h3>📜 VÝHODY</h3>
+<ul>
+<li>🌱 Beginner Effect: 
+<ul>
+<li>Snížení cooldownu dungeonů -50%</li>
+<li>Všechny Biologist questy do levelu 90 bez čekání</li>
+<li>+10% síla proti monster</li>
+<li>+20% Drop</li>
+<li>+20% EXP</li>
+<li>Doba trvání: 14 dní</li>
+</ul>
+</li>
+<li>🔹 První P Skill: Při prvním M1 se skill automaticky stane Perfect (P).</li>
+<li>🔹 Level 30 Reward: Zbraň “Young Heroes” na 7 dní.</li>
+<li>🔹 Level 55 Reward: Speciální předměty potřebné k postupu.</li>
+<li>🔹 Level 75 Reward: Nová zbraň “Young Heroes” na 7 dní + sada Alchemy kamenů s bonusy.</li>
+<li>🔹 Level 90 Reward: Sada Soul Crystal doplňků, nemohou být upraveny či vylepšeny, použití pouze do získání nových z dungeonů. Mají expiraci.</li>
+</ul>
+</section>
+<section>
+<h2>🇭 ELEMENTAL REALM UPDATE GUIDE</h2>
+<p>Pro jasný přehled, jak má být update zažíván, zde je doporučená postupnost v Elemental Realm:</p>
+
+<h3>1. Odblokování Elementální Mapy</h3>
+<ul>
+<li>Prvním cílem je dokončit misi, která odblokuje Elementální Mapu.</li>
+<li>Musíte dokončit všechny požadované mise a zakoupit klíč v General Store.</li>
+<li><strong>Neuspěchejte</strong> tento krok. Pokud mapu odblokujete příliš brzy a nemůžete vstoupit do potřebného dungeonu kvůli slabému vybavení, <strong>ztratíte trvale přístup k level 105 dungeonům.</strong></li>
+</ul>
+
+<h3>2. Příprava vybavení</h3>
+<ul>
+<li>Před vstupem do Ice Dungeon (První Element) se ujistěte, že splňujete všechny požadavky.</li>
+<li>Připravte všechny potřebné předměty pro Elementální Mapu a Ice Dungeon.</li>
+<li>Bez plně vylepšeného a připraveného vybavení zaostanete a ztratíte možnosti dungeonů.</li>
+</ul>
+
+<h3>3. Vývoj postavy</h3>
+<ul>
+<li>Upgradujte Energy Crystal (velmi důležité).</li>
+<li>Postupně zlepšujte schopnosti společníka.</li>
+<li>Kupte nové Elemental Potions.</li>
+<li>Začněte doručovat požadované předměty Biologistovi.</li>
+<li>Odblokujte Skill Tree postavy a postupně odemykejte elementalní schopnosti odpovídající vašemu aktuálnímu elementu pro efektivnější farmení bossů a dungeonů.</li>
+</ul>
+
+<h3>4. Crafting vybavení</h3>
+<ul>
+<li>Sbírejte materiály pro výrobu Ice Ring od <strong>Seon-Pyeong</strong>.</li>
+<li>Kupte Elemental Armor Stone +0 a aplikujte jej na brnění pro efektivnější postup (upgradujte kdykoliv).</li>
+</ul>
+
+<h3>5. Strategie Elementálního postupu</h3>
+<ul>
+<li>Odemykejte každý element postupně plněním jeho specifických misí.</li>
+<li><strong>Důležitá pravidla:</strong></li>
+<ul>
+<li>Každý nový element vyžaduje lepší a odlišné vybavení.</li>
+<li>Vždy farmejte a sbírejte vybavení pro další element před odemknutím.</li>
+<li>Příliš rychlý postup bez přípravy sníží efektivitu grindování.</li>
+</ul>
+</ul>
+
+<h3>6. Konečný cíl</h3>
+<ul>
+<li>Hlavním cílem je odemknout všech šest elementů pro dosažení maximální síly a ovládnutí království.</li>
+<li>Pouze po odemknutí a správném vybavení všech elementů můžete skutečně dosáhnout nadvlády v Elemental Realm.</li>
+</ul>
+</section>
+
+<section>
+<h2>✍️ DEVELOPER NOTE</h2>
+<p>Tento update přináší obrovské množství nového obsahu, navrženého tak, aby byl náročnější a poskytoval dlouhodobý postup pro všechny hráče. Věříme, že vyšší obtížnost je nezbytná pro udržení hry zajímavé, odměňující a budoucí-proof, zejména s novou Elemental expanzí.</p>
+
+<p>Jako u každého velkého updatu mohou nastat neočekávané problémy kvůli složitosti a množství nových systémů. Prosíme o trpělivost a pochopení, pokud bude potřeba další údržba. Náš tým pečlivě sleduje zpětnou vazbu a rychle řeší případné problémy.</p>
+
+<p>Vaše podpora a oddanost posouvají Origins2 vpřed. Děkujeme, že jste součástí této cesty s námi! &lt;:HYPE:1042449580085743696&gt;</p>
+</section>
+</div> <!-- konec container -->
+</body>
+</html>
